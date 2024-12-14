@@ -40,6 +40,7 @@ The contents of this repository are organized as follows:
 ### Example usage
 
 Look at the notebook ```example_usage.ipynb``` for more details. Please note that there are two different paths to follow: the ML approach and the quantum approach. Depending on your preferences you may want to compute the energies using one approach or the other.
+There is also the ```plots.ipynb``` file where you can input your data or results and obtain the same plots as we did in results.
 
 ## Acknowledgements
 I want to express my deepest gratitute to Parfait Atchade, who helped me every step of the way during the development of this project.
