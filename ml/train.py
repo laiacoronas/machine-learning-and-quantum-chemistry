@@ -10,7 +10,6 @@ from lightgbm import LGBMRegressor
 from sklearn.ensemble import RandomForestRegressor
 
 def training(file, model):
-    
     if model == "xgb":
         model = XGBRegressor(random_state=42)
 
@@ -42,6 +41,7 @@ def training(file, model):
             'min_child_samples': [5, 10],
             'learning_rate': [0.01, 0.1, 0.2],
             'subsample': [0.6, 0.8],
+            'num_leaves':[500,1000]
             
         }
     
