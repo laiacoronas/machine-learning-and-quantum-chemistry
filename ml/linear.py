@@ -45,5 +45,5 @@ def predict(file, new_qubits):
     intercept = model.intercept_
     new_energy = slope * new_qubits + intercept
 
-    print(f"The predicted energy of the molecule with {new_qubits} electrons is: {new_energy}")
+    print(f"The predicted energy of the molecule with {new_qubits} electrons is: {new_energy} Ha")
     return new_energy
