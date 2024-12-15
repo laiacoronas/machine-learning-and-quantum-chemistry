@@ -14,15 +14,15 @@ def test(file):
     if "pubchem" in file:
         model = XGBRegressor(random_state=42)
         param_grid = {'learning_rate': [0.05], 'max_depth': [5], 'min_child_weight': [5], 'n_estimators': [500], 'subsample': [0.6]}
-        train_data = pd.read_csv("datasets_corrected/training/pubchem.csv").fillna(0)
+        train_data = pd.read_csv("data/training/pubchem.csv").fillna(0)
     elif "coulomb" in file:
         model = RandomForestRegressor(random_state=42)
         param_grid = {'max_depth': [10], 'max_features': ['sqrt'], 'min_samples_leaf': [1], 'min_samples_split': [2], 'n_estimators': [500]}
-        train_data = pd.read_csv("datasets_corrected/training/coulomb.csv").fillna(0)
+        train_data = pd.read_csv("data/training/coulomb.csv").fillna(0)
     elif "combined" in file:
-        model = LGBMRegressor(random_state=42)
+        model = LGBMRegressor(random_state=42, verbose=-1)
         param_grid = {'learning_rate': [0.1], 'max_depth': [10], 'min_child_samples': [10], 'n_estimators': [500], 'subsample': [0.6]}
-        train_data = pd.read_csv("datasets_corrected/training/combined.csv").fillna(0)
+        train_data = pd.read_csv("data/training/combined.csv").fillna(0)
  
     y_train = train_data[target_column]
     X_train = train_data.drop(columns=columns_to_drop)
