@@ -4,8 +4,8 @@ import re
 def clean_pubchem(file):
     data = pd.read_csv(file)
     data = data[["id","mf","mw","polararea","complexity","xlogp","heavycnt","hbonddonor","hbondacc","rotbonds","covalentunitcnt","isotopeatomcnt","totalatomstereocnt","definedatomstereocnt"]]
-    data['qubits'] = data['mw'].apply(num_qubits)
-    data['S'] = data['mw'].apply(one_hot_encoding, args=('S',))
+    data['electrones'] = data['mf'].apply(num_qubits)
+    data['S'] = data['mf'].apply(one_hot_encoding, args=('S',))
     data.to_csv(file)
     return data
 
