@@ -33,7 +33,7 @@ def training(file, model):
         }
 
     if model == "lgbm":
-        model = LGBMRegressor(random_state=42)
+        model = LGBMRegressor(random_state=42, verbose = -1)
 
         param_grid = {
             'n_estimators': [500, 1000],
@@ -41,7 +41,6 @@ def training(file, model):
             'min_child_samples': [5, 10],
             'learning_rate': [0.01, 0.1, 0.2],
             'subsample': [0.6, 0.8],
-            'num_leaves':[500,1000]
             
         }
     
