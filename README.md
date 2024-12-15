@@ -32,6 +32,7 @@ pip install -r requirements.txt
 The contents of this repository are organized as follows:
 
 - data: original data used to train/test models
+- preprocessing: some codes to preprocess data and atomic positions from json files or csv files downloaded from pubchem
 - ml: machine learning models trained and tested to predict ground state energies
 - quantum: quantum models used to obtained the ground state energies of the molecules
 - results: final plots obtained by running the codes on the data folder
@@ -39,6 +40,7 @@ The contents of this repository are organized as follows:
 ### Example usage
 
 Look at the notebook ```example_usage.ipynb``` for more details. Please note that there are two different paths to follow: the ML approach and the quantum approach. Depending on your preferences you may want to compute the energies using one approach or the other.
+There is also the ```plots.ipynb``` file where you can input your data or results and obtain the same plots as we did in results.
 
 ## Acknowledgements
 I want to express my deepest gratitute to Parfait Atchade, who helped me every step of the way during the development of this project.
