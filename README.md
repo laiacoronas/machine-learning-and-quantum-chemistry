@@ -45,4 +45,11 @@ There is also the ```plots.ipynb``` file where you can input your data or result
 ## Acknowledgements
 I want to express my deepest gratitute to Parfait Atchade, who helped me every step of the way during the development of this project.
 
+## Citation
+The work presented in this repository is published in the following paper:
+
+```python
+Laia Coronas Sala, Parfait Atchade-Adelemou. Leveraging Machine Learning to Overcome Limitations in Quantum Algorithms. arXiv:2412.11405 [physics.chem-ph], 16 Dec 2024. Disponible en: https://doi.org/10.48550/arXiv.2412.11405
+```
+
 
