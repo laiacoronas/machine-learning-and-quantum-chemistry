@@ -1,4 +1,4 @@
-# ML-vs-quantum-algorithms
+# Machine Learning and Quantum Chemistry
 This work explores the integration of machine learning (ML) techniques to address limitations in quantum algorithms such as Variational Quantum Eigensolver (VQE), Hartree-Fock (HF), and Quantum Phase Estimation (QPE). We focus on the development of datasets tailored to enhance quantum simulations and present a synergistic framework that leverages ML to improve accuracy, scalability, and computational efficiency. This repository aims to make the results obtained in the paper "Leveraging Machine Learning to Overcome Limitations in Quantum Algorithms" easy to reproduce and transparent.
 
 Note that this code is intend to reproduce the results obtained in the paper but it can be also used to predict energies for your own molecules.
